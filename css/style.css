@@ -11,6 +11,7 @@
     --block-color-hover: #27415e;
     --text-color: rgb(159,173,189);
 }
+
 body{
     position: relative;
     background-color: rgb(191, 191, 191);
@@ -29,6 +30,10 @@ body::-webkit-scrollbar-thumb {
     color: white;
     position: relative;
   }
+.buffer{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
   
   .title {
     font-family: Jcorbs;
@@ -59,7 +64,7 @@ body::-webkit-scrollbar-thumb {
     border: 2px solid rgb(255, 255, 255);
     color: white;
     cursor: pointer;
-    width: 100vw;
+    width: 99.9vw;
   }
 
   .bordered-text {
@@ -91,7 +96,7 @@ body::-webkit-scrollbar-thumb {
   /* Three columns side by side */
 .column {
   float: left;
-  width: 33.3%;
+  width: 20%;
   margin-top: 100px;
   margin-bottom: 16px;
   padding: 0 8px;
@@ -107,7 +112,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Add some shadows to create a card effect */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Some left and right padding inside the container */
@@ -157,6 +162,14 @@ body::-webkit-scrollbar-thumb {
     padding: 14px 19px;
     transition: 0.3s;
   }
+  .img2{
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-400%, -25%);
+    width: auto; 
+    height: 150px;
+  }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
@@ -188,6 +201,7 @@ body::-webkit-scrollbar-thumb {
   .footer-img {
     width: 200px;
     height: auto;
+    text-align: center;
     border: 1px solid black;
   }
   
