@@ -6,7 +6,8 @@
       <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'Moscow')">Description</button>
         <button class="tablinks" onclick="openCity(event, 'London')">AUTO-AUTO</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Check-List</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Hardware Check-List</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Electrical Check-List</button>
       </div>
     <div>
       <img class = 'img2' src="images/valorlogo.png" alt="">
@@ -52,26 +53,24 @@
                 </div>
               </div>
             </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="images/NoPfp.jpg" alt="Mike" style="width:100%">
-                <div class="container">
-                  <h2>Alam Zaeem</h2>
-                  <p class="small-text">Manufacture</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
-            </div>
-          
             <div class="column">
               <div class="card">
                 <img src="images/NoPfp.jpg" alt="John" style="width:100%">
                 <div class="container">
                   <h2>Shrea Poladia</h2>
                   <p class="small-text">Electrical</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>"Good luck... Dont waste our materials!"</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="images/NoPfp.jpg" alt="Mike" style="width:100%">
+                <div class="container">
+                  <h2>Alam Zaeem</h2>
+                  <p class="small-text">Manufacture</p>
+                  <p class = "really-small-text">Some text that describes me lorem ipsum ipsum lorem.</p>
                   <p><button class="button">Contact</button></p>
                 </div>
               </div>
@@ -109,16 +108,86 @@
                 </div>
               </div>
             </div>
+            <div class="column">
+              <div class="card">
+                <img src="images/NoPfp.jpg" alt="John" style="width:100%">
+                <div class="container">
+                  <h2>Ana Lorder</h2>
+                  <p class="small-text">Mentor</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
           </div>
     </div>
 
     <div id="London" class="tabcontent">
       <h3 class = 'large-text'>AUTO-AUTO</h3>
-      <p>London is the capital city of England.</p>
+      <div class="picture-container">
+        <div class = "image-container">
+          <img src="images/field3.png" alt="" width="1400">
+        </div>
+        <ul class="bullet-points">
+          <li class="bullet-point" id='toggle-button1' >Start1</li>
+          <li class="bullet-point" id='toggle-button2' >Start2</li>
+          <li class="bullet-point" id='toggle-button3' >Start3</li>
+        </ul>
+        <ul class="bullet-points2">
+          <li class="bullet-point2" id='toggle-button4' >Start4</li>
+          <li class="bullet-point2" id='toggle-button5' >Start5</li>
+          <li class="bullet-point2" id='toggle-button6' >Start6</li>
+        </ul>
+      </div>
+      <div class="button-containder" id="hidden-element1" style="display: none;">
+        <button class="button" id = "button-1">Score Local</button>
+        <button class="button" id = "button-2">Bridge</button>
+        <button class="button" id = "button-3">Go Out</button>
+      </div>
+      <div class="button-containder" id="hidden-element2" style="display: none;">
+        <button class="button" id = "button-4">Score Local</button>
+        <button class="button" id = "button-5">Bridge</button>
+        <button class="button" id = "button-6">Go Out</button>
+      </div>
+      <div class="button-containder" id="hidden-element3" style="display: none;">
+        <button class="button" id = "button-7">Score Local</button>
+        <button class="button" id = "button-8">Bridge</button>
+        <button class="button" id = "button-9">Go Out</button>
+      </div>
+      <div class="button-containder" id="hidden-element3" style="display: none;">
+        <button class="button" id = "button-10">Score Local</button>
+        <button class="button" id = "button-11">Bridge</button>
+        <button class="button" id = "button-12">Go Out</button>
+      </div>
+      <div class="button-containder" id="hidden-element3" style="display: none;">
+        <button class="button" id = "button-13">Score Local</button>
+        <button class="button" id = "button-14">Bridge</button>
+        <button class="button" id = "button-15">Go Out</button>
+      </div>
+      <div class="button-containder" id="hidden-element3" style="display: none;">
+        <button class="button" id = "button-16">Score Local</button>
+        <button class="button" id = "button-17">Bridge</button>
+        <button class="button" id = "button-18">Go Out</button>
+      </div>
+      <div class="text-box-container">
+        <input type="text" id="code-input" placeholder="Enter your custom code">
+        <button id="submit-button">Submit</button>
+        <button id="clearButton">Clear</button>
+      </div>
+      <div class="output-box-container">
+        <p>Custom Code:</p>
+        <textarea id="output-box" rows="20" cols="70" readonly></textarea>
+        <button id="copy-button">Copy</button>
+      </div>
     </div>
     
     <div id="Paris" class="tabcontent">
-      <h3 class = 'large-text'>Check-List</h3>
+      <h3 class = 'large-text'>Hardware Check-List</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h3 class = 'large-text'>Electrical Check-List</h3>
       <p>Paris is the capital of France.</p>
     </div>
     
@@ -126,7 +195,8 @@
     <script src="js/main.js?ver=1.0"></script>
   </body>
   <footer>
-    Click buttons on the top to see some content.
+    <p>Click any button from the top right. </p>
+    WARNING FOR AUTO-AUTO: When you are picking auto styles, click buttons ONLY from left to right in order + DO NOT COMBINE different starting positions
 
     <div class = 'buffer'>---</div>
 
