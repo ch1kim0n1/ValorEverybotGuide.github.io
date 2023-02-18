@@ -194,10 +194,21 @@ body::-webkit-scrollbar-thumb {
 .containerElec{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   margin: 0 auto;
   max-width: 800px;
+}
+
+.leftColumn{
+  justify-content: left;
+  float: left;
+  align-items: left;
+}
+.rightColumn{
+  justify-content: right;
+  float: right;
+  align-items: right;
 }
 
 .image-column {

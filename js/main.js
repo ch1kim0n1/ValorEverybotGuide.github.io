@@ -175,25 +175,71 @@ submitButton.addEventListener('click', () => {
   
   switch (selectedVariable) {
     case 'variable-1':
-      customCode = `Custom code for variable 1: ${selectedVariable}`;
+      customCode = `if(m_timer.Get() < secondsX){                     // PERFECT VOLTAGE - 12.3 - 12.5
+        m_robotDrive.ArcadeDrive(0.0, 0.0, false);
+      }
+      else if(m_timer.Get() < 0.15_s + secondsX){
+        m_robotDrive.TankDrive(-0.6, -0.6, false); 
+      }
+      else if(m_timer.Get() < 1.5_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false);  //this is going between 0.15 and 1.2
+      }`;
       break;
     case 'variable-2':
       customCode = `Custom code for variable 2: ${selectedVariable}`;
       break;
     case 'variable-3':
-      customCode = `Custom code for variable 3: ${selectedVariable}`;
+      customCode = `if(m_timer.Get() < secondsX){                     // PERFECT VOLTAGE - 12.3 - 12.5
+        m_robotDrive.ArcadeDrive(0.0, 0.0, false);
+      }
+      else if(m_timer.Get() < 0.15_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false); 
+      }
+      else if(m_timer.Get() < 1.5_s + secondsX){
+        m_robotDrive.TankDrive(0.9, 0.9, false);  //this is going between 0.15 and 1.2
+      }
+      else if(m_timer.Get() < 1.7_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false); 
+      }`;
       break;
     case 'variable-4':
-      customCode = `Custom code for variable 4: ${selectedVariable}`;
+      customCode = `if(m_timer.Get() < secondsX){                     // PERFECT VOLTAGE - 12.3 - 12.5
+        m_robotDrive.ArcadeDrive(0.0, 0.0, false);
+      }
+      else if(m_timer.Get() < 0.15_s + secondsX){
+        m_robotDrive.TankDrive(-0.6, -0.6, false); 
+      }
+      else if(m_timer.Get() < 1.5_s + secondsX){
+        m_robotDrive.TankDrive(0.9, 0.9, false);  //this is going between 0.15 and 1.2
+      }`;
       break;
     case 'variable-5':
       customCode = `Custom code for variable 5: ${selectedVariable}`;
       break;
     case 'variable-6':
-      customCode = `Custom code for variable 6: ${selectedVariable}`;
+      customCode = `if(m_timer.Get() < secondsX){                     // PERFECT VOLTAGE - 12.3 - 12.5
+        m_robotDrive.ArcadeDrive(0.0, 0.0, false);
+      }
+      else if(m_timer.Get() < 0.15_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false); 
+      }
+      else if(m_timer.Get() < 1.5_s + secondsX){
+        m_robotDrive.TankDrive(0.9, 0.9, false);  //this is going between 0.15 and 1.2
+      }
+      else if(m_timer.Get() < 1.7_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false); 
+      }`;
       break;
     case 'variable-7':
-    customCode = `Custom code for variable 7: ${selectedVariable}`;
+    customCode = `if(m_timer.Get() < secondsX){                     // PERFECT VOLTAGE - 12.3 - 12.5
+      m_robotDrive.ArcadeDrive(0.0, 0.0, false);
+    }
+    else if(m_timer.Get() < 0.15_s + secondsX){
+      m_robotDrive.TankDrive(-0.6, -0.6, false); 
+    }
+    else if(m_timer.Get() < 1.5_s + secondsX){
+      m_robotDrive.TankDrive(0, 0, false);  //this is going between 0.15 and 1.2
+    }`;
     break;
     case 'variable-8':
     customCode = `Custom code for variable 8: ${selectedVariable}`;
@@ -210,7 +256,39 @@ submitButton.addEventListener('click', () => {
     }`;
     break;
     case 'variable-1variable-2':
-      customCode = `Custom code for variable 1 + variable 2: ${selectedVariable}`;
+      customCode = `if(m_timer.Get() < secondsX){                     // PERFECT VOLTAGE - 12.3 - 12.5
+        m_robotDrive.ArcadeDrive(0.0, 0.0, false);
+      }
+      else if(m_timer.Get() < 0.15_s + secondsX){
+        m_robotDrive.TankDrive(-0.6, -0.6, false); 
+      }
+      else if(m_timer.Get() < 1.5_s + secondsX){
+        m_robotDrive.TankDrive(0.9, 0.9, false);  //this is going between 0.15 and 1.2
+      }
+      else if(m_timer.Get() < 1.7_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false); 
+      }
+      else if(m_timer.Get() < 2_s + secondsX){
+        m_robotDrive.TankDrive(-0.65, 0.65, false); 
+      }
+      else if(m_timer.Get() < 2.6_s + secondsX){ //0.3sec to turn 90 degrees with speed 0.62
+        m_robotDrive.TankDrive(-0.6, -0.6, false); 
+      }
+      else if(m_timer.Get() < 3.1_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false); 
+      }
+      else if(m_timer.Get() < 3.4_s + secondsX){
+        m_robotDrive.TankDrive(0.57, -0.57, false); 
+      }
+      else if(m_timer.Get() < 4.65_s + secondsX){
+        m_robotDrive.TankDrive(-0.8, -0.8, false); 
+      }
+      else if(m_timer.Get() < 4.7_s + secondsX){
+        m_robotDrive.TankDrive(0.8, 0.8, false); 
+      }
+      else if(m_timer.Get() < 6_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false); 
+      }`;
       break;
     case 'variable-2variable-3':
       customCode = `IT IS NOT POSSIBLE, CLEAR AND PICK SOMETHING ELSE`;
