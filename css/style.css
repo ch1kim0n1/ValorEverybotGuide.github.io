@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
     background-color: var(--foreground-color);
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #71cfff;
+    background-color: #f65050;
     border-radius: 5px;
     outline: 0;
 }
@@ -49,17 +49,25 @@ body::-webkit-scrollbar-thumb {
   .image-container{
     text-align: center;
   }
+
+  img {
+    max-width: 100%
+  }
+  .image {
+    width: 30%
+  }
+
   .bullet-points {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 47%;
     transform: translate(-50%, -50%);
   }
 
   .bullet-points2 {
     position: absolute;
     top: 65%;
-    right: 28%;
+    right: 42%;
     transform: translate(-50%, -50%);
   }
 
@@ -178,9 +186,45 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* Some left and right padding inside the container */
+/* ONLY FOR DESCRIPTION PAGE */
 .container {
   padding: 0 16px;
+}
+
+.containerElec{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.image-column {
+  width: 50%;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-column {
+  width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.text-column h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-column p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* Clear floats */
@@ -192,8 +236,9 @@ body::-webkit-scrollbar-thumb {
 
 .button-container {
   display: flex;
-  justify-content: space-between;
   padding: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -208,6 +253,9 @@ body::-webkit-scrollbar-thumb {
   width: 150px;
   height: 50px;
   font-size: 18px;
+  transition: background-color 0.5s ease;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
@@ -240,11 +288,6 @@ body::-webkit-scrollbar-thumb {
     transform: translate(-400%, -25%);
     width: auto; 
     height: 150px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #4b4a4a;
   }
   
   /* Create an active/current tablink class */
