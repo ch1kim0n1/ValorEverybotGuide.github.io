@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
     background-color: var(--foreground-color);
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #f65050;
+    background-color: #cecece;
     border-radius: 5px;
     outline: 0;
 }
@@ -129,6 +129,22 @@ body::-webkit-scrollbar-thumb {
     color: white;
     cursor: pointer;
     width: 99.9vw;
+  }
+
+  .tablinks {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-color: #fffa5d;
+    cursor: pointer;
+    width: 9vw;
+    transition: background-color 0.3s ease;
+  }
+
+  .tablinks:hover{
+    background-color: #ff5f5f;
   }
 
   .bordered-text {
@@ -264,9 +280,7 @@ body::-webkit-scrollbar-thumb {
   width: 150px;
   height: 50px;
   font-size: 18px;
-  transition: background-color 0.5s ease;
-  justify-content: center;
-  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
