@@ -294,7 +294,22 @@ submitButton.addEventListener('click', () => {
       customCode = `IT IS NOT POSSIBLE, CLEAR AND PICK SOMETHING ELSE`;
       break;
     case 'variable-4variable-5':
-      customCode = `Custom code for variable 4 + variable 5: ${selectedVariable}`;
+      customCode = `//MUST FACE THE DRIVER
+      if(m_timer.Get() < secondsX){
+        m_robotDrive.ArcadeDrive(0.0, 0.0, false);
+      }
+      else if(m_timer.Get() < 0.15_s + secondsX){
+        m_robotDrive.TankDrive(0.6, 0.6, false); 
+      }
+      else if(m_timer.Get() < 1.3_s + secondsX){
+        m_robotDrive.TankDrive(-0.7, -0.7, false); //initially 0.9 
+      }
+      else if(m_timer.Get() < 1.35_s + secondsX){
+        m_robotDrive.TankDrive(0.8, 0.8, false); 
+      }
+      else if(m_timer.Get() < 1.7_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false); 
+      }`;
       break;
     case 'variable-5variable-6':
       customCode = `IT IS NOT POSSIBLE, CLEAR AND PICK SOMETHING ELSE`;
@@ -352,7 +367,31 @@ submitButton.addEventListener('click', () => {
       }`;
       break;
     case 'variable-4variable-6':
-      customCode = `Custom code for variable 4 and variable 6: ${selectedVariable}`;
+      customCode = `//MUST FACE THE DRIVER
+      if(m_timer.Get() < secondsX){
+        m_robotDrive.ArcadeDrive(0.0, 0.0, false);
+      }
+      else if(m_timer.Get() < 0.15_s + secondsX){
+        m_robotDrive.TankDrive(0.6, 0.6, false); 
+      }
+      else if(m_timer.Get() < 1.3_s + secondsX){
+        m_robotDrive.TankDrive(-0.53, -0.53, false); 
+      }
+      else if(m_timer.Get() < 1.35_s + secondsX){
+        m_robotDrive.TankDrive(0.8, 0.8, false); 
+      }
+      else if(m_timer.Get() < 1.7_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false); 
+      }
+      else if(m_timer.Get() < 3.3_s + secondsX){
+        m_robotDrive.TankDrive(-0.3, -0.3, false); 
+      }
+      else if(m_timer.Get() < 3.9_s + secondsX){
+        m_robotDrive.TankDrive(-0.6, -0.6, false);
+      }
+      else if(m_timer.Get() < 15_s + secondsX){
+        m_robotDrive.TankDrive(0, 0, false);
+      }`;
       break;
     case 'variable-7variable-9':
       customCode = `if(m_timer.Get() < secondsX){
@@ -369,13 +408,13 @@ submitButton.addEventListener('click', () => {
       }`;
       break;
     case 'variable-1variable-2variable-3':
-      customCode = `Custom code for variable 1 and variable 3: ${selectedVariable}`;
+      customCode = `Bridge + GoOut IS NOT POSSIBLE, CLEAR AND PICK SOMETHING ELSE`;
       break;
     case 'variable-4variable-5variable-6':
-      customCode = `Custom code for variable 4 and variable 6: ${selectedVariable}`;
+      customCode = `Bridge + GoOut IS NOT POSSIBLE, CLEAR AND PICK SOMETHING ELSE`;
       break;
     case 'variable-7variable-8variable-9':
-      customCode = `Custom code for variable 7 and variable 9: ${selectedVariable}`;
+      customCode = `Bridge + GoOut IS NOT POSSIBLE, CLEAR AND PICK SOMETHING ELSE`;
       break;
     default:
       customCode = 'No variable selected';
