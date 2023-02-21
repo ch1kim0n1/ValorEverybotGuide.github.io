@@ -15,6 +15,16 @@ const button6 = document.getElementById('button-6');
 const button7 = document.getElementById('button-7');
 const button8 = document.getElementById('button-8');
 const button9 = document.getElementById('button-9');
+const button10 = document.getElementById('button-10');
+const button11 = document.getElementById('button-11');
+const button12 = document.getElementById('button-12');
+const button13 = document.getElementById('button-13');
+const button14 = document.getElementById('button-14');
+const button15 = document.getElementById('button-15');
+const button16 = document.getElementById('button-16');
+const button17 = document.getElementById('button-17');
+const button18 = document.getElementById('button-18');
+
 // Add event listeners to the buttons
 button1.addEventListener('click', () => {
   const buttonValue = 'variable-1';
@@ -24,6 +34,7 @@ button1.addEventListener('click', () => {
     codeInput.value += buttonValue;
   }
 });
+
 button2.addEventListener('click', () => {
   const buttonValue = 'variable-2';
   if (codeInput.value.includes(buttonValue)) {
@@ -32,6 +43,7 @@ button2.addEventListener('click', () => {
     codeInput.value += buttonValue;
   }
 });
+
 button3.addEventListener('click', () => {
   const buttonValue = 'variable-3';
   if (codeInput.value.includes(buttonValue)) {
@@ -40,6 +52,7 @@ button3.addEventListener('click', () => {
     codeInput.value += buttonValue;
   }
 });
+
 button4.addEventListener('click', () => {
   const buttonValue = 'variable-4';
   if (codeInput.value.includes(buttonValue)) {
@@ -48,6 +61,7 @@ button4.addEventListener('click', () => {
     codeInput.value += buttonValue;
   }
 });
+
 button5.addEventListener('click', () => {
   const buttonValue = 'variable-5';
   if (codeInput.value.includes(buttonValue)) {
@@ -56,6 +70,7 @@ button5.addEventListener('click', () => {
     codeInput.value += buttonValue;
   }
 });
+
 button6.addEventListener('click', () => {
   const buttonValue = 'variable-6';
   if (codeInput.value.includes(buttonValue)) {
@@ -64,6 +79,7 @@ button6.addEventListener('click', () => {
     codeInput.value += buttonValue;
   }
 });
+
 button7.addEventListener('click', () => {
   const buttonValue = 'variable-7';
   if (codeInput.value.includes(buttonValue)) {
@@ -72,6 +88,7 @@ button7.addEventListener('click', () => {
     codeInput.value += buttonValue;
   }
 });
+
 button8.addEventListener('click', () => {
   const buttonValue = 'variable-8';
   if (codeInput.value.includes(buttonValue)) {
@@ -80,6 +97,7 @@ button8.addEventListener('click', () => {
     codeInput.value += buttonValue;
   }
 });
+
 button9.addEventListener('click', () => {
   const buttonValue = 'variable-9';
   if (codeInput.value.includes(buttonValue)) {
@@ -88,6 +106,88 @@ button9.addEventListener('click', () => {
     codeInput.value += buttonValue;
   }
 });
+
+button10.addEventListener('click', () => {
+  const buttonValue = 'variable-10';
+  if (codeInput.value.includes(buttonValue)) {
+    codeInput.value = codeInput.value.replace(buttonValue, '');
+  } else {
+    codeInput.value += buttonValue;
+  }
+});
+
+button11.addEventListener('click', () => {
+  const buttonValue = 'variable-11';
+  if (codeInput.value.includes(buttonValue)) {
+    codeInput.value = codeInput.value.replace(buttonValue, '');
+  } else {
+    codeInput.value += buttonValue;
+  }
+});
+
+button12.addEventListener('click', () => {
+  const buttonValue = 'variable-12';
+  if (codeInput.value.includes(buttonValue)) {
+    codeInput.value = codeInput.value.replace(buttonValue, '');
+  } else {
+    codeInput.value += buttonValue;
+  }
+});
+
+button13.addEventListener('click', () => {
+  const buttonValue = 'variable-13';
+  if (codeInput.value.includes(buttonValue)) {
+    codeInput.value = codeInput.value.replace(buttonValue, '');
+  } else {
+    codeInput.value += buttonValue;
+  }
+});
+
+button14.addEventListener('click', () => {
+  const buttonValue = 'variable-14';
+  if (codeInput.value.includes(buttonValue)) {
+    codeInput.value = codeInput.value.replace(buttonValue, '');
+  } else {
+    codeInput.value += buttonValue;
+  }
+});
+
+button15.addEventListener('click', () => {
+  const buttonValue = 'variable-15';
+  if (codeInput.value.includes(buttonValue)) {
+    codeInput.value = codeInput.value.replace(buttonValue, '');
+  } else {
+    codeInput.value += buttonValue;
+  }
+});
+
+button16.addEventListener('click', () => {
+  const buttonValue = 'variable-16';
+  if (codeInput.value.includes(buttonValue)) {
+    codeInput.value = codeInput.value.replace(buttonValue, '');
+  } else {
+    codeInput.value += buttonValue;
+  }
+});
+
+button17.addEventListener('click', () => {
+  const buttonValue = 'variable-17';
+  if (codeInput.value.includes(buttonValue)) {
+    codeInput.value = codeInput.value.replace(buttonValue, '');
+  } else {
+    codeInput.value += buttonValue;
+  }
+});
+
+button18.addEventListener('click', () => {
+  const buttonValue = 'variable-18';
+  if (codeInput.value.includes(buttonValue)) {
+    codeInput.value = codeInput.value.replace(buttonValue, '');
+  } else {
+    codeInput.value += buttonValue;
+  }
+});
+
 
 
 const toggleButton1 = document.getElementById('toggle-button1');
