@@ -69,6 +69,15 @@ for (let i = 4; i <= 12; i++) {
   button.addEventListener('click', function() {
     setInputValue(i);
   });
+    
+function clearInputValue() {
+  inputBox.value = '';
+  inputBox2.value = '';
+}
+clearButton.addEventListener('click', function() {
+  inputBox.value = '';
+  inputBox2.value = '';
+});
 }
 
 // Add an event listener to button 1
@@ -162,12 +171,6 @@ button10.style.display = 'none';
 button11.style.display = 'none';
 button12.style.display = 'none';
 }
-//fix here --------------------------------------------------------------
-clearButton.addEventListener('click', function() {
-  clearInputValue();
-});
     
-function clearInputValue() {
-  inputBox.value = '';
-}
+
 });
